@@ -64,7 +64,7 @@ function JeopardyBoard(props: JeopardyBoardProps) {
         className="clue"
       >
         <div className="clue-category-label">
-          {categoryName} - ${clue.value}
+          {categoryName} - {clue.value}
         </div>
         <div
           className={
@@ -171,7 +171,7 @@ function JeopardyBoard(props: JeopardyBoardProps) {
                       onClick={() => chooseClue(i, j)}
                       className="board-clue"
                     >
-                      ${category.clues[j].value}
+                      {category.clues[j].value}
                     </td>
                   );
                 })}
